@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+</head>
+<body style="margin: 200px">
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar">
+			<option value=https://i.pinimg.com/originals/a7/9a/0e/a79a0e6f5b7ae7cf167b9dd215ed464e.png>PILIH KARAKTER</option>
+			<option value="https://images.homedepot-static.com/productImages/a8f9eec2-02f2-4072-9b0a-cdb1a7fe3ebc/svn/multi-roommates-wall-decals-rmk1430gm-64_1000.jpg">WOODY</option>
+			<option value="https://static.wikia.nocookie.net/disney/images/3/36/Profile_-_Lotso_Huggin_Bear.jpeg/revision/latest?cb=20190313160702">LOTSO</option>
+			<option value="https://bbts1.azureedge.net/images/p/full/2019/01/ad84b951-ffd2-4f8c-a2ef-227c36b36eaa.jpg">BUZZ</option>
+			<option value="https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-y1ys73_7dd5c0b7.jpeg?region=0,0,450,450">JESSIE</option>
+			<option value="https://images-na.ssl-images-amazon.com/images/I/71ZcRWrP-YL._AC_SL1500_.jpg">FORKY</option>
+			<option value="https://static.wikia.nocookie.net/pixar/images/f/f0/Bo_Peep.png/revision/latest?cb=20200208211616">BOO PEEP</option>
+		</select>
+	</center>
+		<br/>
+	<img src="https://i.pinimg.com/originals/a7/9a/0e/a79a0e6f5b7ae7cf167b9dd215ed464e.png" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
